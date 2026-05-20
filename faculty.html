@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty & Staff - Government Polytechnic College</title>
+  <meta name="description" content="Meet our highly qualified engineering instructors, technical guides, and administration staff.">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .faculty-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 2rem auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .faculty-card {
+      text-align: center;
+      background: var(--white);
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      overflow: hidden;
+      border-bottom: 4px solid transparent;
+    }
+    .faculty-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      border-bottom-color: var(--secondary-color);
+    }
+    .faculty-card:hover .faculty-avatar {
+      transform: scale(1.1);
+    }
+    .faculty-dept {
+      font-size: 0.85rem;
+      color: var(--secondary-color);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="header-top">
+    <div>📍 Angadipuram, Perinthalmanna, Kerala, India</div>
+    <div>📞 +91 4933 227 253 | 📧 info@gptcperinthalmanna.edu</div>
+  </div>
+
+  <!-- Header & Navbar -->
+  <header class="header">
+    <div class="header-main">
+      <div class="logo-area">
+        <div class="logo-img">GPTC</div>
+        <div class="logo-text">
+          <h1>GOVERNMENT POLYTECHNIC COLLEGE</h1>
+          <p>Approved by AICTE & Affiliated to State Board of Technical Education</p>
+        </div>
+      </div>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="news.html">News & Notices</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section style="background-color: var(--primary-color); color: var(--white); padding: 3rem 5%; text-align: center;">
+    <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Faculty & Staff members</h2>
+    <p style="font-size: 1.1rem; opacity: 0.9;">Mentoring future engineers with academic integrity and industry expertise</p>
+  </section>
+
+  <!-- Faculty Grid Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Our Mentors</h2>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        
+        <!-- Principal -->
+        <div class="faculty-card reveal">
+          <div class="faculty-avatar" style="background-color: #004b87;">PR</div>
+          <div class="card-content">
+            <div class="faculty-dept">Administration</div>
+            <h3 class="card-title" style="font-size: 1.2rem; margin-bottom: 0.2rem;">Prof. K. Raghunandanan</h3>
+            <p style="color: var(--text-light); font-size: 0.9rem; font-weight: 500;">Principal</p>
+          </div>
+        </div>
+
+        <!-- HOD Civil -->
+        <div class="faculty-card reveal">
+          <div class="faculty-avatar" style="background-color: #28a745;">SV</div>
+          <div class="card-content">
+            <div class="faculty-dept">Civil Engineering</div>
+            <h3 class="card-title" style="font-size: 1.2rem; margin-bottom: 0.2rem;">Dr. Sreevalsan V.</h3>
+            <p style="color: var(--text-light); font-size: 0.9rem; font-weight: 500;">Head of Department</p>
+          </div>
+        </div>
+
+        <!-- Faculty Civil 1 -->
+        <div class="faculty-card reveal">
+          <div class="faculty-avatar" style="background-color: #28a745;">SL</div>
+          <div class="card-content">
+            <div class="faculty-dept">Civil Engineering</div>
+            <h3 class="card-title" style="font-size: 1.2rem; margin-bottom: 0.2rem;">Prof. Shiny Lal</h3>
+            <p style="color: var(--text-light); font-size: 0.9rem; font-weight: 500;">Assistant Professor</p>
+          </div>
+        </div>
+
+        <!-- HOD Mechanical -->
+        <div class="faculty-card reveal">
+          <div class="faculty-avatar" style="background-color: #ffc107; color: #333;">KP</div>
+          <div class="card-content">
+            <div class="faculty-dept">Mechanical Engineering</div>
+            <h3 class="card-title" style="font-size: 1.2rem; margin-bottom: 0.2rem;">Prof. Krishnaprasad P.</h3>
+            <p style="color: var(--text-light); font-size: 0.9rem; font-weight: 500;">Head of Department</p>
+          </div>
+        </div>
+
+        <!-- Faculty Mechanical 1 -->
+        <div class="faculty-card reveal">
+          <div class="faculty-avatar" style="background-color: #ffc107; color: #333;">RM</div>
+          <div class="card-content">
+            <div class="faculty-dept">Mechanical Engineering</div>
+            <h3 class="card-title" style="font-size: 1.2rem; margin-bottom: 0.2rem;">Prof. Rajesh M. R.</h3>
+            <p style="color: var(--text-light); font-size: 0.9rem; font-weight: 500;">Lecturer</p>
+          </div>
+        </div>
+
+        <!-- HOD EEE -->
+        <div class="faculty-card reveal">
+          <div class="faculty-avatar" style="background-color: #dc3545;">AN</div>
+          <div class="card-content">
+            <div class="faculty-dept">Electrical & Electronics</div>
+            <h3 class="card-title" style="font-size: 1.2rem; margin-bottom: 0.2rem;">Prof. Abdul Nizar</h3>
+            <p style="color: var(--text-light); font-size: 0.9rem; font-weight: 500;">Head of Department</p>
+          </div>
+        </div>
+
+        <!-- Faculty EEE 1 -->
+        <div class="faculty-card reveal">
+          <div class="faculty-avatar" style="background-color: #dc3545;">MS</div>
+          <div class="card-content">
+            <div class="faculty-dept">Electrical & Electronics</div>
+            <h3 class="card-title" style="font-size: 1.2rem; margin-bottom: 0.2rem;">Prof. Mini S.</h3>
+            <p style="color: var(--text-light); font-size: 0.9rem; font-weight: 500;">Assistant Professor</p>
+          </div>
+        </div>
+
+        <!-- HOD ECE -->
+        <div class="faculty-card reveal">
+          <div class="faculty-avatar" style="background-color: #17a2b8;">LK</div>
+          <div class="card-content">
+            <div class="faculty-dept">Electronics Engineering</div>
+            <h3 class="card-title" style="font-size: 1.2rem; margin-bottom: 0.2rem;">Dr. Latha K.</h3>
+            <p style="color: var(--text-light); font-size: 0.9rem; font-weight: 500;">Head of Department</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>About GPTC</h3>
+        <p style="color: #ccc; font-size: 0.95rem; line-height: 1.6;">
+          Government Polytechnic College, Perinthalmanna, has been an eminent center of technical training for decades. We empower our engineering students with knowledge and active industry skills.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">Institution History</a></li>
+          <li><a href="departments.html">Engineering Departments</a></li>
+          <li><a href="admissions.html">Admission Criteria</a></li>
+          <li><a href="news.html">News & Circulars</a></li>
+          <li><a href="contact.html">Reach Out to Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact Info</h3>
+        <p style="color: #ccc; font-size: 0.95rem; line-height: 1.8; margin-bottom: 1rem;">
+          📍 Angadipuram P.O, Perinthalmanna,<br>Malappuram District, Kerala - 679321
+        </p>
+        <p style="color: #ccc; font-size: 0.95rem; line-height: 1.8;">
+          📞 Office: +91 4933 227 253<br>
+          📧 Email: info@gptcperinthalmanna.edu
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Government Polytechnic College. All Rights Reserved. Built with Web Standards.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
